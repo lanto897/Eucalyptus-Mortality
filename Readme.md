@@ -11,7 +11,6 @@ This repository contains the R scripts and data for an analysis investigating th
 - [Dependencies & Setup](#dependencies--setup)
 - [How to Run the Analysis](#how-to-run-the-analysis)
 - [Script Descriptions](#script-descriptions)
-- [License](#license)
 
 ## Project Overview
 
