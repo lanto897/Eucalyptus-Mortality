@@ -14,7 +14,7 @@ This repository contains the R scripts and data for an analysis investigating th
 
 ## Project Overview
 
-The primary goal of this research is to determine whether environmental factors—such as elevation, slope, soil type, and terrain ruggedness—have a differential impact on the survival of four key Eucalyptus species:
+The primary goal of this research is to determine whether spatial factors—such as elevation, slope, soil type, and terrain ruggedness—have a differential impact on the survival of four key Eucalyptus species:
 -   **`CA`**: *Eucalyptus cloeziana*
 -   **`CX`**: *Eucalyptus cladocalyx*
 -   **`EG`**: *Eucalyptus grandis*
