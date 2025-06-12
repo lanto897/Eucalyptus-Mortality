@@ -1,6 +1,6 @@
 # Analysis of Factors Influencing Eucalyptus Species Replacement
 
-This repository contains the R scripts and data for an analysis investigating the environmental and topographical factors that influence the replacement (mortality) of four Eucalyptus species. The analysis uses Negative Binomial Generalized Linear Models (GLMs) to understand how site characteristics relate to tree replacement counts.
+This repository contains the R scripts and data for an analysis investigating the spatial and climatic factors that influence the replacement (mortality) of four Eucalyptus species. The analysis uses Negative Binomial Generalized Linear Models (GLMs) to understand how site characteristics relate to tree replacement counts.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -14,19 +14,19 @@ This repository contains the R scripts and data for an analysis investigating th
 
 ## Project Overview
 
-The primary goal of this research is to determine whether spatial factors—such as elevation, slope, soil type, and terrain ruggedness, have a differential impact on the survival of four key Eucalyptus species:
+The primary goal of this research is to determine whether spatial factors such as elevation, slope, soil suitability index, terrain roughness, and terrain ruggedness, have a differential impact on the survival of four Eucalyptus species:
 -   **`CA`**: *Eucalyptus cloeziana*
 -   **`CX`**: *Eucalyptus cladocalyx*
 -   **`EG`**: *Eucalyptus grandis*
 -   **`EU`**: *Eucalyptus urophylla*
 
-The analysis evaluates tree replacement counts at two time points (August and October) and models these counts against various predictors to test for significant interactions between species and site characteristics.
+The analysis evaluates tree replacement counts at two time blanking sessions (August and October) and models these counts against various predictors to test for significant interactions between species and spatial factors.
 
 ## Key Findings
 
 1.  **Data Distribution**: The tree replacement count data is over-dispersed and does not follow a normal or standard Poisson distribution. A **Negative Binomial distribution** was found to be the best fit for modeling the data.
 2.  **Species Effect**: There are significant differences in the overall number of replaced trees among the four species at both the August and October time points.
-3.  **Interaction Effects**: The relationship between several environmental predictors (e.g., elevation, slope, soil suitability) and tree replacement is not consistent across all species. This indicates that species respond differently to their environment, and these factors are crucial in predicting site-specific suitability.
+3.  **Interaction Effects**: The relationship between several environmental predictors (e.g., elevation, terrain roughness, soil suitability) and tree replacement is not consistent across all species. This indicates that species respond differently to their environment, and these factors are crucial in predicting site-specific suitability.
 
 ## Visualization Example
 
