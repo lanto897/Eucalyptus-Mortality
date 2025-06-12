@@ -25,7 +25,7 @@ The analysis evaluates tree replacement counts at two time blanking sessions (Au
 ## Key Findings
 
 1.  **Data Distribution**: The tree replacement count data is over-dispersed and does not follow a normal or standard Poisson distribution. A **Negative Binomial distribution** was found to be the best fit for modeling the data.
-2.  **Species Effect**: There are significant differences in the overall number of replaced trees among the four species at both August and October time point.
+2.  **Species Effect**: There are significant differences in the overall number of replaced trees among the four species at October time point.
 3.  **Interaction Effects**: The relationship between several environmental predictors (e.g., elevation, terrain roughness, soil suitability) and tree replacement is not consistent across all species. This indicates that species respond differently to their environment, and these factors are crucial in predicting site-specific suitability.
 
 ## Visualization Example
