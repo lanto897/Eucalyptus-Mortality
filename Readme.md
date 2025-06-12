@@ -25,12 +25,12 @@ The analysis evaluates tree replacement counts at two time blanking sessions (Au
 ## Key Findings
 
 1.  **Data Distribution**: The tree replacement count data is over-dispersed and does not follow a normal or standard Poisson distribution. A **Negative Binomial distribution** was found to be the best fit for modeling the data.
-2.  **Species Effect**: There are significant differences in the overall number of replaced trees among the four species at both the August and October time points.
+2.  **Species Effect**: There are significant differences in the overall number of replaced trees among the four species at both August and October time point.
 3.  **Interaction Effects**: The relationship between several environmental predictors (e.g., elevation, terrain roughness, soil suitability) and tree replacement is not consistent across all species. This indicates that species respond differently to their environment, and these factors are crucial in predicting site-specific suitability.
 
 ## Visualization Example
 
-The analysis generates plots to visualize the significant interaction effects. The following multi-panel plot, created by `src/Interaction.R`, shows how the relationship between the number of replaced trees (August) and various environmental factors changes for each species.
+The analysis generates plots to visualize the significant interaction effects. The following multi-panel plot, created by `src/Interaction.R`, shows how the relationship between the number of replaced trees (August) and various spatial factors changes for each species.
 
 ![Combined Interaction Plots](combined_eucalyptus_plots.png)
 
@@ -59,7 +59,7 @@ The repository is organized into data and source code directories.
 4.  **Distribution Fitting**: The `fitdistrplus` package is used to compare Normal, Poisson, and Negative Binomial distributions for the count data. The Akaike Information Criterion (AIC) confirms that the Negative Binomial model provides the best fit.
 5.  **Statistical Modeling**: Negative Binomial GLMs (`glm.nb` from the `MASS` package) are used to:
     a. Test for a main effect of `Species` on tree replacement.
-    b. Test for interaction effects between `Species` and each environmental predictor (e.g., `AUG ~ Species * AvELEV`).
+    b. Test for interaction effects between `Species` and each spatial predictor (e.g., `AUG ~ Species * AvELEV`).
 6.  **Post-Hoc Analysis**: Where the main effect of `Species` is significant, a Dunn's test (`dunnTest` from the `FSA` package) is performed to identify which specific species pairs differ from each other.
 
 ## Dependencies & Setup
