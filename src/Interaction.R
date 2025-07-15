@@ -48,14 +48,15 @@ p1 <- ggplot(ALLDATA, aes(x = AvROUGH, y = AUG, color = Species)) +
   common_theme +
   ylim(0, 40)
 
-# Plot 2: October Elevation (y=OCT)
-p2 <- ggplot(ALLDATA, aes(x = AvELEV, y = OCT, color = Species)) +
+# Plot 2: August Elevation (y=AUG)
+p2 <- ggplot(ALLDATA, aes(x = AvELEV, y = AUG, color = Species)) +
   geom_point(size = 4) +
   geom_smooth(method = lm, se = FALSE, fullrange = TRUE, size = 1.5) +
   xlab("Elevation (m)") +
   ylab("Number of Replaced Trees") +
   common_colors +
   common_theme +
+  xlim(320, 370) +
   ylim(0, 40)
 
 # Plot 3: August Slope
