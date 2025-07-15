@@ -32,7 +32,7 @@ The analysis evaluates tree replacement counts at two time blanking sessions (Au
 
 The analysis generates plots to visualize the significant interaction effects. The following multi-panel plot, created by `src/Interaction.R`, shows how the relationship between the number of replaced trees (August) and various spatial factors changes for each species.
 
-![Combined Interaction Plots](combined.png)
+![Combined Interaction Plots](combined.PNG)
 
 ## Repository Structure
 
